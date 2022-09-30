@@ -24,10 +24,13 @@ header {
 
 p {
   color: black;
+  font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+h3 {
+  color: rgb(10, 89, 154);
+}
 
 .headerButtons {
   display: flex;
@@ -101,7 +104,7 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.collapsibleSmall, .collapsibleTop, .collapsible {
+.collapsibleSmall, .collapsibleTop, .collapsibleBottom, .collapsible {
   background-color: rgb(10, 89, 154);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: grid;
@@ -134,11 +137,22 @@ p {
   font-size: 25px;
 }
 
+.collapsibleBottom {
+  padding: 2em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover, .collapsibleSmall:hover, .collapsibleTop:hover {
+.active, .collapsible:hover, .collapsibleSmall:hover, .collapsibleTop:hover, .collapsibleBottom:hover {
   background-color: rgb(41, 100, 148);
 }
 
+.collapsibleBottom:checked{
+  border-radius: 0%;
+}
 /* Style for the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
@@ -157,7 +171,7 @@ footer {
 
 hr {
   height: 2px;
-  width: 100%;
+  width: 80%;
   color: rgb(10, 89, 154);
   background-color: rgb(10, 89, 154);
 }

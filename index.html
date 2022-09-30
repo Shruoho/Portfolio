@@ -1,7 +1,13 @@
 <html>
 
 <head>
-
+    <meta charset='UTF-8'>
+    <title>Sonja Hopearuoho portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Sonja Hopearuoho portfolio">
+    <meta name="keywords" content="portfolio, html, css, javascript, figma, UX-design, UI-Design">
+    <meta name="author" content="Hopearuoho Sonja">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,22 +31,16 @@
 </header>
 
 <body>
-    <!-- <div class="pages">
-        <a href="portfolio-AboutMe.html">About me</a>
-        <a href="portfolio-Figma.html">Figma projects</a>
-        <a href="portfolio-FrontEnd.html">HTML/Javascript/CSS</a>
-        <a href="portfolio-Angular.html">Angular projects</a>
-    </div> -->
 
     <div class="pageContent">
 
         <!-- FIGMA PROJECTS -->
-        <button type="button" class="collapsibleTop">My Figma projects</button>
+        <button type="button" class="collapsibleTop">FIGMA WORKS</button>
         <div class="content">
             <div class="contentText">
                 <div>
                     <h2>BeautyShaman beauty salon</h2>
-                    <p>My self practice prototype for a Finnish beauty salon.</p>
+                    <p>This self practice prototype is my unofficial design for a certain Finnish beauty salon. They use natural cosmeticts from Finnish brands so I chose a clean design and used colors which match an image of clean nature.</p>
                     <button class="buttonLinks"><a
                             href="https://www.figma.com/proto/K2o9L5Kdqv7YDy6bW0ocTK/beautyshaman?page-id=0%3A1&node-id=12%3A154&starting-point-node-id=1%3A2&scaling=scale-down">Try
                             it out
@@ -53,7 +53,7 @@
             <div class="contentText">
                 <div>
                     <h2>HOT DOG CAT 公式サイト</h2>
-                    <p>This prototype is my own design of an official site for japanese idol group HOT DOG CAT.</p> <br>
+                    <p>This prototype is my own design of an unofficial site for japanese idol group HOT DOG CAT.</p> <br>
                     <button class="buttonLinks"><a
                             href="https://www.figma.com/proto/2GADrTxN2c3Jv8jC2wUkfh/HOT-DOG-CAT?page-id=0%3A1&node-id=3%3A2&starting-point-node-id=3%3A2&scaling=scale-down">Try
                             it out
@@ -67,8 +67,7 @@
                 <div>
                     <h2>Phone application</h2>
                     <p>
-                        A group project which was done during Prototyping of Digital
-                        Services-course.
+                        A group project which was done during Prototyping of Digital Services-course.
                     </p>
                     <button class="buttonLinks"><a
                             href="https://www.figma.com/proto/HX4YNFDvXAh48Rxx2ONzys/Team-Valo-(DIG1TN003-3014)?page-id=0%3A1&node-id=5%3A302&starting-point-node-id=5%3A302&scaling=scale-down">Try
@@ -83,12 +82,12 @@
         </div>
 
         <!-- HTML/CSS -->
-        <button type="button" class="collapsible">Website projects</button>
+        <button type="button" class="collapsible">HTML/CSS WORKS</button>
         <div class="content">
             <div class="contentText">
                 <div>
                     <h2>Electric Jellyfish ~Fry~ 公式サイト</h2>
-                    <p>This practice piece was </p>
+                    <p>This self practice piece was my unofficial design for Japanese idol group. Sites style comes from their logo. I chose colors and styles which fit it.</p>
                     <button class="buttonLinks"><a href="https://shruoho.github.io/Electric-Jellyfish-Fry/">Check it
                             out</a></button><br>
                     <button class="buttonLinks">
@@ -99,7 +98,7 @@
 
         </div>
         <!-- STUDIES -->
-        <button type="button" class="collapsible">Read more about my studies</button>
+        <button type="button" class="collapsible">MY BUSINESS INFORMATION STUDIES</button>
         <div class="content">
             <br>
             <p>I started my business information technology studies in Haaga-Helia university of Applied Sciences in
@@ -107,9 +106,8 @@
                 2021. <br>
                 My major specialization is digital services which focuses on developing digital services, user
                 experience
-                and user interfaces. <br>
-                My minor studies has been software development, mostly front end focused. </p>
-            <button type="button" class="collapsibleSmall">Cources</button>
+                and user interfaces. My minor studies has been software development, mostly focused to front end. </p>
+            <button type="button" class="collapsibleSmall">Check out which cources I've completed</button>
             <div class="content">
                 <br>
 
@@ -148,7 +146,7 @@
                     <ul>
                         <li>Orientation to Software
                             Engineering</li>
-                        <li>Programming 1</li>
+                        <li>Programming 1 (Basics of Java)</li>
                         <li>Databases and Data Management</li>
                         <li>Software requirements specification and testing</li>
                         <li>Basics of Python</li>
@@ -164,6 +162,38 @@
                         <li>SAP HANA Overview</li>
                     </ul>
                 </div>
+
+            </div>
+            <br><br>
+        </div>
+
+        <!-- ABOUT ME -->
+        <button type="button" class="collapsibleBottom">ABOUT ME</button>
+        <div class="content">
+            <div class="contentText">
+                <div>
+                    <h3>Profile</h3>
+                    <p>Born in 1993 <br>
+                    I live in Vantaa</p>
+                </div> 
+                
+                <div>
+                    <h3>Facts about me</h3>
+                    <p>A Bookworm <br>
+                        Fan of Hanshin Tigers<br>
+                        Cheesecake specialist
+                    </p>
+                </div>
+                
+                <div>
+                    <h3>Hobbies</h3>
+                    <p>Reading <br>
+                        Baking <br>
+                        Pokemon GO <br>
+                        Sewing</p>
+                </div>
+               
+                
             </div>
         </div>
     </div>
@@ -205,6 +235,21 @@
     }
 
     var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+    var coll = document.getElementsByClassName("collapsibleBottom");
     var i;
 
     for (i = 0; i < coll.length; i++) {
